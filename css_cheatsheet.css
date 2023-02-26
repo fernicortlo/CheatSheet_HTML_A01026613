@@ -1,7 +1,98 @@
+body{
+    background-color: rgb(207, 207, 246);
+}
+.center {
+    text-align: center;
+  }
+
+.right {
+    text-align: right;
+}
 
 #border{
     border:solid;
+    border-color: rgb(198, 72, 203);
+    border-width: 4px;
+}
+
+#border-left{
+    border-left: solid;
+    border-left-color: rgb(198, 72, 203);
+    border-left-width: 4px;
+}
+
+#border-right{
+    border-right: solid;
+    border-right-color: rgb(198, 72, 203);
+    border-right-width: 4px;
 }
 
 
+#border-top{
+    border-top: solid;
+    border-top-color: rgb(198, 72, 203);
+    border-top-width: 4px;
+}
+
+#border-bottom{
+    border-bottom: solid;
+    border-bottom-color: rgb(198, 72, 203) ;
+    border-bottom-width: 4px;
+}
+
+#border-radius{
+    border: solid;
+    border-color:cadetblue;
+    border-width: 4px;
+    border-radius: 40px;
+}
+
+#border-radius-sides{
+    border: solid;
+    border-color: cadetblue;
+    border-width: 3px;
+    border-radius: 10% 25% 40%;
+}
+
+.tiledBackground {
+    background-image: url(https://assets.stickpng.com/images/580b57fcd9996e24bc43c31c.png);
+    background-size:50px;
+    width: 500px;
+    height: 300px;
+    border: 5px solid;
+    color: pink;
+  }
+
+#color{
+    color: indigo;
+}
+
+#font{
+    font: italic 1.25em "Fira Sans", serif;
+}
+
+#font-family{
+    font-family:cursive
+}
+
+#font-style{
+    font-family: cursive;
+    font-style: italic
+}
+
+#lighter{
+    font-weight: lighter;
+}
+
+#normal{
+    font-weight: normal;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+#bolder{
+    font-weight: bolder;
+}
 
