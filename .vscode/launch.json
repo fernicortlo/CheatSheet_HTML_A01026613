@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/fernandacortes/cuarto/homework_A01026613",
+      "program": "/Users/fernandacortes/cuarto/homework_A01026613/build/Debug/outDebug"
+    }
+  ]
+}
