@@ -114,12 +114,77 @@ body{
     padding: 10px 50px 20px;
 }
 
-#overflow{
+#hidden{
     background-color: hotpink;
     width: 200px;
     height: 65px;
     border: 1px solid;
+    margin-bottom: 1rem;
     overflow: hidden;
 }
 
+#visible{
+    background-color: hotpink;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    margin-bottom: 4rem;
+    overflow: visible;
+}
 
+.p{
+    color: navy
+}
+
+#inline{
+    display: inline;
+}
+
+#block{
+    display: block;
+}
+
+#inline_block{
+    display: inline-block;
+}
+
+.static{
+    position: static;
+    border: 3px solid #FF69B4;
+}
+
+.relative{
+    position: relative;
+    border: 3px solid #FF69B4;
+    left: 30px;
+}
+
+.relative{
+    position: relative;
+    border: 3px solid #FF69B4;
+    left: 30px;
+}
+
+.fixed{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #FF69B4;
+}
+
+.absolute{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #FF69B4;
+    margin: 8rem;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+    filter: grayscale();
+}
