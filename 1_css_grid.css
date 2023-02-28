@@ -18,7 +18,7 @@ body, html{
 }
 
 .grid-item{
-    background-color: #95bfcf;
+    /* background-color: #95bfcf; */
     padding: 10px;
     margin: 10px;
 }
@@ -38,4 +38,28 @@ body, html{
 
 #grid-footer{
     grid-column: 1 / span 3;
+}
+
+#item1{
+    background-color:rgb(255,197,125);
+}
+
+#item2{
+    background-color: rgb(255,178,136);
+}
+
+#item3{
+    background-color: rgb(255,158,158);
+}
+
+#item4{
+    background-color: rgb(255,245,145);
+}
+
+#item5{
+    background-color: rgb(255,170,196);
+}
+
+#item6{
+    background-color: hotpink;
 }
