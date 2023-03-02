@@ -7,42 +7,57 @@ body, html{
     padding: 0;
 }
 
+
 .grid-container{
     padding: 10px;
     height: 100vh;
-    background-color: aliceblue;
+    background-color:antiquewhite;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    'right right right left left left'
+    'menu main main main main main'
+    'menu main main main main main'
+    'footer footer footer footer footer footer ';
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-
-    /* grid-template-areas: 
-    "header header header"
-    ". content ."
-    ". content ."
-    ". content ."; */
 }
 
-.grid-item{
-    background-color: #95bfcf;
+#grid-item{
     padding: 10px;
     margin: 10px;
 }
 
 .grid-item:nth-child(even){
-    background-color: cadetblue;
+    background-color: lightcoral;
 }
 
-#grid-header{
-    /* grid-area: header; */
-    grid-column: 1 / -1;
+#grid-right{
+    grid-area: right;
+    background-color: #e796d5;
 }
 
-#grid-content{
-    /* grid-area: content; */
-    grid-row: 2 / span 3;
-    grid-column: 2;
+#grid-left{
+    grid-area: left;
+    background-color: #c9c1e6;
 }
+
+#grid-menu{
+    grid-area: menu;
+    background-color: #96cce7;
+}
+
+#grid-main{
+    grid-area: main;
+    background-color: #e7b596;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #96e7b1;
+}
+
+
 
 
 .font{
