@@ -46,10 +46,9 @@ body, html{
 
 #gridlayout{
     padding: 10px;
-    height: 10vh;
+    height: 1vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     /* grid-template-areas: 
     'header header header header'
