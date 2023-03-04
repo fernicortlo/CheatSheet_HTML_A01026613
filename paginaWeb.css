@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+/* div{
+    border: 2px solid rgb(190, 112, 216);
+} */
+
+.grid-container{
+    display: flex;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+html, body{
+    margin: 0;
+    padding:0;
+} 
+
+.row1-flex{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    flex-direction: row;
+    display: flex;
+    background-color: rgb(237, 173, 100);
+    gap: 25%;
+
+}
+
+.item1{
+    display: flex;
+    margin: 5%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: small;
+} 
+
+.item2{
+    display: flex;
+    margin: 5%;
+    flex-shrink: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.row2-grid{
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 2/ span 3;
+    background-color: rgb(240, 165, 220);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item3{
+    display: flex;
+    flex-shrink: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.item4{
+    display: flex;
+    flex-shrink: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-weight: light;
+    font-size: small;
+}
+
+.row3-grid{
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 5 / span 1;
+    flex-direction: row;
+    background-color: rgb(237, 173, 100);
+    justify-content: center;
+    align-items: center;
+}
+
+.item5{
+    display: flex;
+    margin: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-weight: light;
+    font-size: small;
+}
+
+input{
+    width:100%;
+}
+
+button{
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    margin: 2px;
+    width:15%;
+
+}
+.row4-grid{
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 6 / span 2;
+    background-color:rgb(238, 229, 215);
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* .item6_1{
+    
+} */
+
+.row5-grid{
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 8 / span 1;
+    background-color: rgb(237, 173, 100);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item7{
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-weight: light;
+    font-size:xx-small;
+}
+
+/* .flex-row1{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+
+}  */
+
+
+
+
+/* .flex-item{
+    margin:5%;
+    flex-shrink: 1;
+    flex-grow: 2;
+} */
