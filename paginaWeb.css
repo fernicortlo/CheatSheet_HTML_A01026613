@@ -103,7 +103,7 @@ input{
 
 button{
     border:none;
-    background-color:#3F51B5;
+    background-color:#65ba82;
     color:#fff;
     margin: 2px;
     width:15%;
@@ -114,14 +114,38 @@ button{
     grid-column: 1 / -1;
     grid-row: 6 / span 2;
     background-color:rgb(238, 229, 215);
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
+    align-items: center;
 }
 
-/* .item6_1{
-    
-} */
+.caption {
+    display: block;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(237, 173, 100);
+    font-weight: light;
+    font-size: small;
+}
+
+.img1{
+    justify-content: center;
+    height: 75px;
+    width: 75px;
+    gap: 30px;
+}
+
+.img2{
+    height: 75px;
+    width: 75px;
+    gap: 30px;
+}
+
+.img3{
+    height: 75px;
+    width: 75px;
+    gap: 30px;
+}
+
 
 .row5-grid{
     display: flex;
