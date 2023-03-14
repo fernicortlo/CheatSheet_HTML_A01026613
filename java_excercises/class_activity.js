@@ -75,26 +75,25 @@ function invertir(arreglo){
 
 }
 console.log("Función 3: ");
-arreglo2 = invertir(arreglo);
 console.log("implementacion uno: ", invertir(arreglo));
 
 
-function invertir2(arreglo2){
-    let array_length = arreglo2.length;
+function invertir2(arreglo){
+    let array_length = arreglo.length;
     let i = 0;
     let j = array_length -1;
     let temp;
     while (i < j){
-        temp = arreglo2[i];
-        arreglo2[i]= arreglo2[j];
-        arreglo2[j]=temp;
+        temp = arreglo[i];
+        arreglo[i]= arreglo[j];
+        arreglo[j]=temp;
         i++;
         j--;
     }
-    return arreglo2;
+    return arreglo;
 }
 
-console.log("implementacion 2: ", invertir2(arreglo2));
+console.log("implementacion 2: ", invertir2(arreglo));
 
 // 4. Escribe una función que reciba una cadena de texto y regrese una nueva con la primer letra de cada palabra en mayúscula.
 let frase;
