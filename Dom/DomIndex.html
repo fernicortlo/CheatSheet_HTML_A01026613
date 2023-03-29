@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../Dom/eventos_dom.css">
+    <script type="module" src="../Dom/eventos_dom.js"></script>
+    <title>Eventos y Dom</title>
+</head>
+
+<body style="background-color:rgb(250, 240, 226);">
+    <h1 class="header">Eventos y DOM y ChatGPT</h1>
+
+    <div class="container">
+        <h2>Instrucciones</h2>
+        <p>Utiliza ChatGPT y github Copilot para resolver la siguiente actividad. Antes de hacer los ejercicios, contesta las siguientes preguntas. Pregúntale a ChatGPT las preguntas, y verifica que lo que haya generado es correcto. Cuando sea necesario, agrega un ejemplo de código. Incluye una fuente que valide o invalide lo que generó. Agrega elementos de HTML con tus respuestas. (<b>Protip</b>: usa ChatGPT para que las respuestas las ponga directamente en elementos de html.)</p>
+
+        <p>Terminando las preguntas y los ejercicios, documenta tu experiencia con las herramientas en la sección de conclusiones. </p>
+    </div>
+
+    <div class="container">
+        <h3 class="header">Preguntas</h3>
+        <ol>
+            <li class="ques">¿Qué es el DOM?</li> 
+            <h5 class="gpt" > ChatGPT </h5>
+            <p>  El Modelo de Objetos del Documento (DOM, por sus siglas en inglés) es una representación en memoria de un documento HTML que permite a los navegadores web y otros programas acceder y manipular la estructura, el contenido y el estilo del documento. En otras palabras, el DOM es un árbol jerárquico de objetos que representa cada elemento, atributo y texto en un documento HTML, y que puede ser manipulado mediante JavaScript para agregar, eliminar o modificar elementos y contenido en tiempo real. El DOM es esencial para la creación de páginas web interactivas y dinámicas, y es una parte fundamental del desarrollo web moderno. </p>
+
+            <h5 class="cop"> Copilot </h5>
+            <p> El DOM es la representación de un documento HTML en forma de árbol de nodos.</p>
+
+            <li class="ques">¿Qué es un nodo?</li>
+            <h5 class="gpt" > ChatGPT </h5>
+            <p> En el contexto del Modelo de Objetos del Documento (DOM), un nodo es un objeto que representa un elemento, atributo o texto dentro de un documento HTML. Cada nodo en el árbol del DOM tiene un tipo, un valor (si corresponde) y cero o más nodos secundarios (también conocidos como hijos).</p>
+
+            <h5 class="cop"> Copilot </h5>
+            <p> Un nodo es un elemento del árbol DOM, por ejemplo, un elemento HTML, un texto, un comentario, etc.</p>
+
+            <li class="ques">¿Cómo se accede a un elemento del DOM?</li>
+            <h5 class="gpt" > ChatGPT </h5>
+            <p> Para acceder a un elemento específico del DOM, primero debe identificar su ubicación en la jerarquía del árbol del DOM.</p>
+            <p> Se puede acceder por: ID, nombre de la etiqueta o a traves de una clase de css</p>
+            
+            <h5 class="cop"> Copilot </h5>
+            <p> Se accede a un elemento del DOM a través de su ID, por ejemplo, document.getElementById("id_del_elemento")</p>
+
+            <li class="ques">¿Cómo se modifica un elemento del DOM?</li>
+            <h5 class="gpt" > ChatGPT </h5>
+            <p> Para modificar un elemento específico del DOM, primero debe acceder al elemento utilizando alguno de los métodos de acceso del DOM como getElementById(), getElementsByTagName() o getElementsByClassName(), como se mencionó anteriormente. Luego, puede utilizar las propiedades y métodos de la API de JavaScript del DOM para modificar el elemento.<p>
+
+            <h5 class="cop"> Copilot </h5>
+            <p> Se modifica un elemento del DOM a través de su ID, por ejemplo, document.getElementById("id_del_elemento").innerHTML = "Nuevo texto"</p>
+
+            <li class="ques">¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
+            <h5 class="gpt" > ChatGPT </h5>
+            <p> La diferencia principal entre los métodos "getElementBy*" y "querySelector*" en la API de JavaScript del DOM es que el primero solo puede acceder a los elementos utilizando su ID, etiqueta o nombre de clase, mientras que el segundo puede acceder a los elementos utilizando selectores CSS más complejos. </p>
+
+            <h5 class="cop"> Copilot </h5>
+            <p> getElementby* devuelve un elemento, querySelector* devuelve una lista de elementos </p>
+
+            <li class="ques">¿Qué es un evento?</li>
+            <h5 class="gpt"> ChatGPT </h5>
+            <p> En HTML, un evento es una acción que ocurre en un elemento HTML y que puede ser detectada y manejada por el navegador web. Los eventos en HTML se utilizan principalmente para crear páginas web interactivas que respondan a las acciones del usuario. </p>
+
+            <h5 class="cop"> Copilot </h5>
+            <p> Un evento es una acción que se produce en un elemento del DOM, por ejemplo, un click, un cambio de valor, etc.</p>
+
+            <li class="ques">¿Qué es un listener?</li>
+            <h5 class="gpt"> ChatGPT </h5>
+            <p> En el contexto de la programación web, un "event listener" es una función que se ejecuta cuando se produce un evento en un elemento HTML, como hacer clic en un botón, mover el ratón, presionar una tecla o cambiar el tamaño de la ventana del navegador. Los "event listeners" se utilizan para crear páginas web interactivas que respondan a las acciones del usuario.</p>
+
+            <h5 class="cop"> Copilot </h5>
+            <p> Un listener es una función que se ejecuta cuando se produce un evento en un elemento del DOM</p>
+
+            <li class="ques">¿Qué es un callback?</li>
+            <h5 class="gpt"> ChatGPT </h5>
+            <p> En programación, un "callback" es una función que se pasa como argumento a otra función y que se ejecuta después de que se complete la función original.
+
+            </p>
+
+            <h5 class="cop"> Copilot </h5>
+            <p> Un callback es una función que se pasa como parámetro a otra función</p>
+            
+            <li class="ques">¿Qué es un objeto de evento?</li>
+            <h5 class="gpt"> ChatGPT </h5>
+            <p> En el contexto de la programación web, un objeto de evento se utiliza para representar un evento que ha ocurrido en un elemento HTML, como hacer clic en un botón, mover el ratón o presionar una tecla.</p>
+
+            <h5 class="cop"> Copilot </h5>
+            <p> Un objeto de evento es un objeto que se pasa como parámetro a una función callback</p>
+        </ol>        
+    </div>
+
+    <h3 class="header">Ejercicios de código</h3>
+    <p>Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que te genere los comentarios. Verifica los resultados antes de subirlos a tu repo.</p>
+
+    <div class="container">
+        <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
+        <p>Posición del mouse: </p>
+        <h5 class="gpt"> ChatGPT </h5>
+        <p id="mousePosition"> Posición </p>
+
+        <h5 class="cop"> Copilot </h5>
+        <p id="mousePositionC" > Posición </p>
+    </div>
+
+    <div class="container">
+        <p>2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y agrega, después del botón, un elemento que tenga el nombre completo.</p>
+        <h5 class="gpt"> ChatGPT </h5>
+        <form id="form1">
+            First name: <input id="form-fname" type="text" name="fname" ><br>
+            Last name: <input id="form-lname" type="text" name="lname" ><br><br>
+        <input id="form1-submit" type="submit" value="Submit">
+        </form>
+        <p id="nombreCompleto"></p>
+
+        <h5 class="cop"> Copilot </h5>
+        <form id="form2">
+            First name: <input id="form2-fname" type="text" name="fname" ><br>
+            Last name: <input id="form2-lname" type="text" name="lname" ><br><br>
+        <input id="form2-submit" type="submit" value="Submit">
+        </form>
+        <p id="nombreCompletoC"></p>
+</div>
+
+    <div class="container">
+        <p>3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón correspondiente.</p>
+        <h5 class="gpt"> ChatGPT </h5>
+        <table id="sampleTable">
+            <tr>
+                <td>Row 1 column 1</td>
+                <td>Row 1 column 2</td>
+            </tr>
+            <tr>
+                <td>Row 2 column 1</td>
+                <td>Row 2 column 2</td>
+            </tr>
+        </table><br>
+        <input id="btn-insert-r" type="button" value="Insert row">
+        <input id="btn-insert-c" type="button" value="Insert column">
+
+        <h5 class="cop"> Copilot </h5>
+        <p > Copilot no sirve </p>
+    </div>
+
+    <div class="container">
+        <p>4. Incluye dos cajas de input, para solicitar al usuario la posición de la fila y columna de la siguiente tabla, y otra para solicitar un texto. Al apretar el botón, actualiza el contenido de esa tabla en la posición que solicitaste, con la cadena de texto que solicitaste.</p>
+        <h5 class="gpt"> ChatGPT </h5>
+        <table id="myTable">
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+                <td>Row1 cell3</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+                <td>Row2 cell3</td>
+            </tr>
+            <tr>
+                <td>Row3 cell1</td>
+                <td>Row3 cell2</td>
+                <td>Row3 cell3</td>
+            </tr>
+            </table><form><br>
+            <input id="rowIndex" type="text" placeholder="Row Index">
+            <input id="colIndex" type="text" placeholder="Col Index">
+            <input id="newValue" type="text" placeholder="New Value">
+            <input id="btn-change" type="button" value="Change content">
+
+        <h5 class="cop"> Copilot </h5>
+        <p > Copilot no sirve </p>
+
+        <table id="myTable1">
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+                <td>Row1 cell3</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+                <td>Row2 cell3</td>
+            </tr>
+            <tr>
+                <td>Row3 cell1</td>
+                <td>Row3 cell2</td>
+                <td>Row3 cell3</td>
+            </tr>
+            </table><form><br>
+            <input id="rowIndex1" type="text" placeholder="Row Index">
+            <input id="colIndex1" type="text" placeholder="Col Index">
+            <input id="newValue1" type="text" placeholder="New Value">
+            <input id="btn-change1" type="button" value="Change content">
+
+    </div>
+
+
+    <div class="container">
+        <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser aleatorios.</p>
+        <h5 class="gpt"> ChatGPT </h5>
+        <form>
+            <select id="colorSelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input id="btn-add-color" type="button" value="Add color">
+            <input id="btn-rmv-color" type="button" value="Remove color">
+        </form>
+
+        <h5 class="cop"> Copilot </h5>
+        <form>
+            <select id="colorSelect1">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input id="btn-add-color1" type="button" value="Add color">
+            <input id="btn-rmv-color1" type="button" value="Remove color">
+        </form>
+    </div>
+
+    <div class="container">
+        <p> 6. Al poner el mouse encima de la siguiente imagen, genera dos números aleatorios entre 300 y 600 para el width y height de una imagen. Reemplaza la imagen de placeholder por otra similar con el tamaño random que generaste. El evento solo se dispara cuando el mouse entra en la imagen.</p>
+        <h5 class="gpt"> ChatGPT </h5>
+        <img  id="imagenGato" src="http://placekitten.com/200/300">
+
+        <h5 class="cop"> Copilot </h5>
+        <img id="imagenGato1" src="http://placekitten.com/200/300">
+        
+    </div>
+
+    <div class="container">
+        <h2 class="header">Conclusiones</h2>
+        <h4>Experiencia general</h4>
+        <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
+        <h4>Ventajas de usar AI para programar</h4>
+        <h4>Desventajas de usar AI para programar</h4>
+    </div>
+
+</body>
+</html>

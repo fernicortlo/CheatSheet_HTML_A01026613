@@ -1,0 +1,45 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    padding: 10px;
+    border-bottom: 1px solid rgb(132, 35, 211);
+}
+
+table, td{
+
+    border: 2px solid rgb(153, 158, 213);
+}
+
+.header{
+    background-color: rgb(246, 180, 203);
+    text-align: center;
+    font-weight: bold;
+}
+
+.gpt{
+    color: rgb(117, 178, 203);
+    text-align: center;
+    background-color: rgb(220, 236, 237);
+}
+
+.cop{
+    color: rgb(213, 135, 235);
+    text-align: center;
+    background-color: rgb(234, 217, 239)
+}
+
+.ques{
+    color: rgb(162, 196, 143);
+    font-weight:bold;
+}
+
+p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:lighter;
+    font-size: medium;
+}
+
+
