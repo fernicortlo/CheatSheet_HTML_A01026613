@@ -42,4 +42,13 @@ p{
     font-size: medium;
 }
 
+#des{
+    color: rgb(198, 51, 51);
+    background-color: rgb(230, 157, 157);
+}
+
+#ad{
+    color: rgb(65, 195, 78);
+    background-color: rgb(173, 230, 173);
+}
 
